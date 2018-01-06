@@ -1,0 +1,149 @@
+/*
+1.0 || Settings
+2.0 || Game Board
+
+*/
+
+body {
+  background-color: #130303;
+  font-family: helvetica;
+  color: white;
+}
+
+#footer {
+  text-align: center;
+  margin-top: 2%;
+}
+
+#jsOutput {
+  border-style: solid;
+  border-color:black;
+  height: 50px;
+  width: 50%;
+  color: white;
+  text-align: center;
+  margin: auto;
+  
+}
+
+#container {
+  margin: auto;
+  height: 600px;
+  width: 600px;
+  border-style: solid;
+  border-color: white;
+}
+
+
+
+/*-----------------------------------------------------------------*/
+/* 1.0 || Settings */
+#setContainer {
+  background-color: #332A2A;
+  width: 600px;
+  height: 600px;
+  visibility: visible;
+}
+
+
+
+.setText {
+  color: white; 
+  font-size: 2em;
+  width: auto;
+  text-align: center;
+  margin: auto auto 10% auto;
+  padding-top: 3%;
+}
+
+.setSelect {
+  display: inline-block;
+  text-align: center;
+  border-style: solid;
+  padding: 1%;
+  margin: auto 2%;
+}
+
+.setSelect:hover, #startBtn:hover, #closeBtn:hover, #setBtn:hover {
+  background-color: #F5853F;
+}
+
+#setBtn {
+  border-style: solid;
+  padding: 0;
+  margin: auto;
+  width: 150px;
+  height: 40px;
+}
+
+#startBtn {
+  border-style: solid;
+  width: 150px;
+  height: 40px;
+  padding: 0;
+  margin-bottom: 2%;
+}
+
+#closeBtn {
+  border-style: solid;
+  width: 150px;
+  height: 40px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+#pOneX, #p2Human, #cpuEasy, #colorOn {
+  color: #912F40;
+}
+
+/*-------------------------------------------------------------*/
+/* 2.0 || Game Board */
+
+#board {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  visibility: hidden;
+  
+}
+
+table {
+  
+  border-collapse:collapse;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+td {
+  border: .5px solid;
+  width: 33.333%;
+  height: 33.333%;
+  position:relative;
+  text-align: center;
+  font-size: 8em;
+  
+  /*background-color: #912F40;*/
+  /* F5853F orange */
+}
+
+td:after {
+  content: "";
+  display: block;
+  
+}
+
+td:hover {
+  cursor: pointer;
+  background-color: #F5853F;
+}
+
+.symbol {
+  position: absolute;
+  float: left;
+  font-size: 6em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);  
+}
+
+
