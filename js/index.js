@@ -1,4 +1,4 @@
-// MVC OOP approach to TicTacToe inspired by http://mamallamacoding.blogspot.com/2014/03/making-tictactoe-with-object-oriented.html
+// MVC OOP approach to TicTacToe
 
 //TODO: 
 //  implement minimax algo for Hard CPU mode
